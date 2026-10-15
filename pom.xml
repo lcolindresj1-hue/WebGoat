@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>4.1.1</version>
   </parent>
-
   <groupId>org.owasp.webgoat</groupId>
   <artifactId>webgoat</artifactId>
   <version>2026.5-SNAPSHOT</version>
   <packaging>jar</packaging>
-
   <name>WebGoat</name>
   <description>WebGoat, a deliberately insecure Web Application</description>
   <url>https://github.com/WebGoat/WebGoat</url>
@@ -27,7 +24,6 @@
       <url>https://www.gnu.org/licenses/gpl-2.0.txt</url>
     </license>
   </licenses>
-
   <developers>
     <developer>
       <id>nbaars</id>
@@ -47,19 +43,16 @@
       <email>angel@olleb.com</email>
     </developer>
   </developers>
-
   <scm>
     <connection>scm:git:git@github.com:WebGoat/WebGoat.git</connection>
     <developerConnection>scm:git:git@github.com:WebGoat/WebGoat.git</developerConnection>
     <tag>HEAD</tag>
     <url>https://github.com/WebGoat/WebGoat</url>
   </scm>
-
   <issueManagement>
     <system>Github Issues</system>
     <url>https://github.com/WebGoat/WebGoat/issues</url>
   </issueManagement>
-
   <properties>
     <!-- Shared properties with plugins and version numbers across submodules-->
     <asciidoctorj.version>3.0.1</asciidoctorj.version>
@@ -113,9 +106,7 @@
     <xstream.version>1.4.5</xstream.version>
     <!-- do not update necessary for lesson -->
     <zxcvbn.version>1.9.0</zxcvbn.version>
-     
   </properties>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -453,7 +444,6 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
-
   <repositories>
     <repository>
       <snapshots>
@@ -776,7 +766,6 @@
                   <goal>start</goal>
                 </goals>
                 <phase>pre-integration-test</phase>
-
                 <configuration>
                   <workingDir>${project.build.directory}</workingDir>
                   <environment>
